@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->integer('price')->nullable();
+            $table->string('status')->default('draft');
             $table->timestamps();
         });
     }

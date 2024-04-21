@@ -25,6 +25,11 @@ class CourseResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('name'),
                 Forms\Components\TextInput::make('price'),
+                Forms\Components\Radio::make('status')
+                    ->options([
+                        'draft' => 'Draft',
+                        'published' => 'Published',
+                    ]),
             ]);
     }
 
@@ -34,6 +39,7 @@ class CourseResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name'),
                 Tables\Columns\TextColumn::make('price'),
+                Tables\Columns\TextColumn::make('status'),
             ])
             ->filters([
                 //
