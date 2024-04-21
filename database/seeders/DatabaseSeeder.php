@@ -18,5 +18,7 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('admin123'),
             'is_admin' => 1,
         ]);
+
+        \App\Models\Course::factory(10)->create();
     }
 }
