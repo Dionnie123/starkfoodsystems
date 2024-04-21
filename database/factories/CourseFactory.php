@@ -18,8 +18,8 @@ class CourseFactory extends Factory
     {
         return [
             'name' => fake()->domainWord(),
-            'price' => fake()->numberBetween(5, 999)
-
+            'price' => fake()->numberBetween(5, 999),
+            'status' => fake()->randomElement(['draft', 'published'])
         ];
     }
 }
