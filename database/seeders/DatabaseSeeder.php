@@ -20,5 +20,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         \App\Models\Course::factory(10)->create();
+
+        \App\Models\CourseCategory::factory(5)->create();
     }
 }
