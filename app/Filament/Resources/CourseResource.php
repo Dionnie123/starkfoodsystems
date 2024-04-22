@@ -27,6 +27,9 @@ class CourseResource extends Resource
                 Forms\Components\TextInput::make('price'),
                 Forms\Components\Select::make('category_id')
                     ->relationship('category', 'name'),
+                Forms\Components\Select::make('tags')
+                    ->relationship('tags', 'name')
+                    ->multiple(),
                 Forms\Components\Radio::make('status')
                     ->options([
                         'draft' => 'Draft',
@@ -42,6 +45,7 @@ class CourseResource extends Resource
                 Tables\Columns\TextColumn::make('name'),
                 Tables\Columns\TextColumn::make('price'),
                 Tables\Columns\TextColumn::make('category.name'),
+                Tables\Columns\TextColumn::make('tags.name'),
                 Tables\Columns\TextColumn::make('status'),
             ])
             ->filters([
@@ -60,7 +64,7 @@ class CourseResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            RelationManagers\TagsRelationManager::class,
         ];
     }
 
