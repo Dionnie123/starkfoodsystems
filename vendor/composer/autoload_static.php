@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7139487f8aa3b99dea27bf65f99f40d8
+class ComposerStaticInit025321621a1e2f6f7cabf433a9223c97
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -425,8 +425,8 @@ class ComposerStaticInit7139487f8aa3b99dea27bf65f99f40d8
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -482,8 +482,8 @@ class ComposerStaticInit7139487f8aa3b99dea27bf65f99f40d8
         ),
         'League\\Uri\\' => 
         array (
-            0 => __DIR__ . '/..' . '/league/uri-interfaces',
-            1 => __DIR__ . '/..' . '/league/uri',
+            0 => __DIR__ . '/..' . '/league/uri',
+            1 => __DIR__ . '/..' . '/league/uri-interfaces',
         ),
         'League\\MimeTypeDetection\\' => 
         array (
@@ -705,6 +705,15 @@ class ComposerStaticInit7139487f8aa3b99dea27bf65f99f40d8
         'AnourValar\\EloquentSerialize\\Service' => __DIR__ . '/..' . '/anourvalar/eloquent-serialize/src/Service.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Filament\\Resources\\CourseCategoryResource' => __DIR__ . '/../..' . '/app/Filament/Resources/CourseCategoryResource.php',
+        'App\\Filament\\Resources\\CourseCategoryResource\\Pages\\ManageCourseCategories' => __DIR__ . '/../..' . '/app/Filament/Resources/CourseCategoryResource/Pages/ManageCourseCategories.php',
+        'App\\Filament\\Resources\\CourseResource' => __DIR__ . '/../..' . '/app/Filament/Resources/CourseResource.php',
+        'App\\Filament\\Resources\\CourseResource\\Pages\\CreateCourse' => __DIR__ . '/../..' . '/app/Filament/Resources/CourseResource/Pages/CreateCourse.php',
+        'App\\Filament\\Resources\\CourseResource\\Pages\\EditCourse' => __DIR__ . '/../..' . '/app/Filament/Resources/CourseResource/Pages/EditCourse.php',
+        'App\\Filament\\Resources\\CourseResource\\Pages\\ListCourses' => __DIR__ . '/../..' . '/app/Filament/Resources/CourseResource/Pages/ListCourses.php',
+        'App\\Filament\\Resources\\CourseResource\\RelationManagers\\TagsRelationManager' => __DIR__ . '/../..' . '/app/Filament/Resources/CourseResource/RelationManagers/TagsRelationManager.php',
+        'App\\Filament\\Resources\\TagResource' => __DIR__ . '/../..' . '/app/Filament/Resources/TagResource.php',
+        'App\\Filament\\Resources\\TagResource\\Pages\\ManageTags' => __DIR__ . '/../..' . '/app/Filament/Resources/TagResource/Pages/ManageTags.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -716,11 +725,15 @@ class ComposerStaticInit7139487f8aa3b99dea27bf65f99f40d8
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\ValidateSignature' => __DIR__ . '/../..' . '/app/Http/Middleware/ValidateSignature.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\Course' => __DIR__ . '/../..' . '/app/Models/Course.php',
+        'App\\Models\\CourseCategory' => __DIR__ . '/../..' . '/app/Models/CourseCategory.php',
+        'App\\Models\\Tag' => __DIR__ . '/../..' . '/app/Models/Tag.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
+        'App\\Providers\\Filament\\AdminPanelProvider' => __DIR__ . '/../..' . '/app/Providers/Filament/AdminPanelProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'BladeUI\\Heroicons\\BladeHeroiconsServiceProvider' => __DIR__ . '/..' . '/blade-ui-kit/blade-heroicons/src/BladeHeroiconsServiceProvider.php',
@@ -848,6 +861,8 @@ class ComposerStaticInit7139487f8aa3b99dea27bf65f99f40d8
         'DanHarrin\\DateFormatConverter\\Converter' => __DIR__ . '/..' . '/danharrin/date-format-converter/src/Converter.php',
         'DanHarrin\\LivewireRateLimiting\\Exceptions\\TooManyRequestsException' => __DIR__ . '/..' . '/danharrin/livewire-rate-limiting/src/Exceptions/TooManyRequestsException.php',
         'DanHarrin\\LivewireRateLimiting\\WithRateLimiting' => __DIR__ . '/..' . '/danharrin/livewire-rate-limiting/src/WithRateLimiting.php',
+        'Database\\Factories\\CourseCategoryFactory' => __DIR__ . '/../..' . '/database/factories/CourseCategoryFactory.php',
+        'Database\\Factories\\CourseFactory' => __DIR__ . '/../..' . '/database/factories/CourseFactory.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
@@ -8504,9 +8519,9 @@ class ComposerStaticInit7139487f8aa3b99dea27bf65f99f40d8
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit7139487f8aa3b99dea27bf65f99f40d8::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit7139487f8aa3b99dea27bf65f99f40d8::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit7139487f8aa3b99dea27bf65f99f40d8::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit025321621a1e2f6f7cabf433a9223c97::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit025321621a1e2f6f7cabf433a9223c97::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit025321621a1e2f6f7cabf433a9223c97::$classMap;
 
         }, null, ClassLoader::class);
     }
