@@ -23,13 +23,13 @@ class CourseResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name'),
+                Forms\Components\TextInput::make('name')->required()->unique(ignoreRecord: true),
                 Forms\Components\TextInput::make('price'),
                 Forms\Components\Radio::make('status')
                     ->options([
                         'draft' => 'Draft',
                         'published' => 'Published',
-                    ]),
+                    ])->default('draft'),
             ]);
     }
 
