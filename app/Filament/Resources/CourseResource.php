@@ -23,7 +23,7 @@ class CourseResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name'),
+                Forms\Components\TextInput::make('name')->required()->unique(ignoreRecord: true),
                 Forms\Components\TextInput::make('price'),
                 Forms\Components\Select::make('category_id')
                     ->relationship('category', 'name'),
@@ -31,7 +31,7 @@ class CourseResource extends Resource
                     ->options([
                         'draft' => 'Draft',
                         'published' => 'Published',
-                    ]),
+                    ])->default('draft'),
             ]);
     }
 
